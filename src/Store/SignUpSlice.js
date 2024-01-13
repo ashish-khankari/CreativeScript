@@ -9,6 +9,7 @@ export const signUpUser = createAsyncThunk(
     // console.log("inside slice",data)
     try {
       const response = await axios.post("http://restapi.adequateshop.com/api/authaccount/registration", data);
+      // console.log("response.data.data", response.data.data)
       AsyncStorage.setItem("user", JSON.stringify(response.data.data));
       return response.data.data;
     } catch (error) {

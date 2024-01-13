@@ -3,13 +3,15 @@ import { View, Text, Image } from "react-native"
 import styles from "./Styles/DashboardScreenStyles"
 import { arrowRight, people, profile, shield, userProfilePic } from "../../theme/images"
 import AccountInfoBars from "../../components/atoms/AccountInfoBars"
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import AddItemsScreen from "./AddItemsScreen"
-import CartScreen from "./CartSreen"
-import DoneScreen from "./DoneScreen"
-import ChatScreen from "./ChatScreen"
+// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
-const Tab = createBottomTabNavigator()
+// const Tab = createBottomTabNavigator()
+
+// const DummyScreen = ({ name }) => (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//         <Text>{name}</Text>
+//     </View>
+// );
 
 const DashboardScreen = () => {
     return (
@@ -29,14 +31,6 @@ const DashboardScreen = () => {
                 <AccountInfoBars leftIcon={shield} title={"Google Business Profile"} rightIcon={arrowRight} />
                 <AccountInfoBars leftIcon={people} title={"Team members"} rightIcon={arrowRight} />
             </View>
-
-            <Tab.Navigator initialRouteName="Home">
-                <Tab.Screen name="AddItemsScreen" component={AddItemsScreen} />
-                <Tab.Screen name="CartScreen" component={CartScreen} />
-                <Tab.Screen name="DoneScreen" component={DoneScreen} />
-                <Tab.Screen name="ChatScreen" component={ChatScreen} />
-            </Tab.Navigator>
-
         </View>
     )
 }

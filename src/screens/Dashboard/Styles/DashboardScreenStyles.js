@@ -2,8 +2,8 @@ import EStyleSheet from "react-native-extended-stylesheet";
 
 const styles = EStyleSheet.create({
     container:{
-        alignItems:"center",
-        justifyContent:"center",
+        // alignItems:"center",
+        // justifyContent:"center",
         flex:1
     },
     userInfoContainer:{
@@ -11,7 +11,7 @@ const styles = EStyleSheet.create({
         height:190,
         alignItems:"center",
         justifyContent:"center",
-        flex:1
+        // flex:1
     },
     imageContainer:{
         width:115,
@@ -31,7 +31,7 @@ const styles = EStyleSheet.create({
         justifyContent:"center",
     },
     accountInfoContainer:{
-        flex:2
+        // flex:2
     }
 })
 

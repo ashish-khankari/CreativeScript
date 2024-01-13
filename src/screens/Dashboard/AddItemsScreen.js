@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 const AddItemsScreen = ()=>{
     return(
         <View>
-            <Text>Hello</Text>
+              <Text>Add Items Screen Content</Text>
         </View>
     )
 }
